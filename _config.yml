@@ -1,0 +1,107 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Local Heroes
+encoding: UTF-8
+timezone: Europe/Amsterdam
+locale: nl_NL
+lang: nl
+# This is the place to set up the contact form recipient
+email: info@localheroesonline.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Local Heroes is het e-commerce platform waarmee je eenvoudig en altijd
+  via de app het aanbod van lokale ondernemers kan bestellen.
+  Boodschappen doen via Local Heroes is een win-win-win.
+  - Steun lokale ondernemers, versterk je buurt
+  - Verse ambachtelijke producten uit de buurt
+  - Bespaar tijd, geld én moeite
+tagline: Bestel het beste uit de buurt
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.localheroesonline.com # the base hostname & protocol for your site, e.g. http://example.com
+image_url: https://axajvrynho.cloudimg.io/v7/https://www.localheroesonline.com
+cloudimg: https://axajvrynho.cloudimg.io/v7/
+logo: https://www.localheroesonline.com/assets/logo.png # used by jekyll-seo-tag
+image: https://www.localheroesonline.com/assets/logo.png # used by jekyll-seo-tag
+social: # used by jekyll-seo-tag
+  name: Local Heroes Online # used by jekyll-seo-tag
+  links:
+    - https://www.facebook.com/localheroesonelineamsterdam/ # used by jekyll-seo-tag
+    - https://www.linkedin.com/company/local-heroes-online/ # used by jekyll-seo-tag
+    - https://www.instagram.com/localheroes_nl/ # used by jekyll-seo-tag
+    - https://github.com/localheroesonline # used by jekyll-seo-tag
+# TODO: override image & description for generated vendor & product pages
+facebook_url: https://www.facebook.com/localheroesonelineamsterdam
+facebook_app_id: 102264097885036
+instagram_url: https://www.instagram.com/localheroes_nl/
+linkedin_company_url: https://www.linkedin.com/company/local-heroes-online/
+linkedin_mcoumans_url: https://www.linkedin.com/in/maarten-coumans-b78989/
+github_username:  localheroesonline
+android_app_id: com.localheroes.consumer
+ios_app_id: 1470938037
+ios_app_clip_bundle_id: com.LHConsumerApp.Clip
+environment: production
+
+# tracking events
+google_analytics: G-Q7NWMYEB0P
+google_tag_manager: UA-260378921
+# mixpanel-project-token: 624a5eaf9d84caf4c6c5af9a45a08a4a # staging
+mixpanel-project-token: d75409912bb950e41f6c85be92aba32d # production
+mixpanel-api-host: https://api-eu.mixpanel.com
+
+# general variables
+btw: NL859626064
+kvk: 73680648
+business_address_street: Bilderdijkkade
+business_address_street_number: 50D10
+business_address_zipcode: 1053VN
+business_address_city: Amsterdam
+business_phone: +31(0)-621351869
+business_whatsapp_url: https://wa.me/31621351869
+business_official_name: F.o.R. BV
+business_working_name: Local Heroes
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+incremental: true
+
+# Include .well-known
+include: [".well-known"]
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
